@@ -51,7 +51,7 @@
                             <div class="col-md-4 col-sm-4">
 						        <fieldset class="form-group">
 							        <label class="form-label" for="tick_fecha">Fecha</label>
-							        <input type="date" readonly="" class="form-control" id="tick_fecha">
+							        <input type="date" readonly="" class="form-control" id="tick_fecha" >
 						        </fieldset>
 					        </div>
 
@@ -72,7 +72,7 @@
 						<div class="col-lg-6">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="tipo_id">Tipo</label>
-								<select class="select2 select2-hidden-accessible" id="tipo_id" multiple="" tabindex="-1" aria-hidden="true">
+								<select id="tipo_id" class="select2 select2-hidden-accessible" name="tipo_name" multiple="" tabindex="-1" aria-hidden="true">
 								</select>
 							</fieldset>
 						</div>
@@ -80,7 +80,7 @@
                         <div class="col-lg-6">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="proceso_id">Proceso</label>
-								<select class="select2 select2-hidden-accessible" id="proceso_id" multiple="" tabindex="-1" aria-hidden="true">
+								<select id="proceso_id" class="select2 select2-hidden-accessible" name="proces_name" multiple="" tabindex="-1" aria-hidden="true">
 								</select>
 							</fieldset>
 						</div>
@@ -101,7 +101,7 @@
 							</fieldset>
 						</div>
                         <div class="col-lg-12">
-                            <button type="submit" name="action" value="add" class="btn btn-rounded btn-inline btn-danger">Cancelar</button>
+                            <a href="../Consultar/index.php" class="btn btn-rounded btn-inline btn-danger">Cancelar</a>
 							<button type="submit" name="action" value="add" class="btn btn-rounded btn-inline btn-success">Guardar</button>
 						</div>
 					</form>
