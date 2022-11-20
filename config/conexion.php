@@ -20,7 +20,7 @@
         }
 
         public function ruta (){
-            return "http://localhost/helpdesk";
+            return "http://localhost/helpdesk/";
         }
 
     }
