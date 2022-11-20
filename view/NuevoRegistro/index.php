@@ -44,14 +44,14 @@
                             <div class="col-md-5 col-sm-4">
 						        <fieldset class="form-group">
 							        <label class="form-label" for="usu_id">Usuario</label>
-                                    <input type="email" class="form-control" id="usu_id" value="<?php echo $_SESSION["usu_name"] ?> <?php echo $_SESSION["usu_apell"] ?>" disabled="">
+                                    <input type="email" class="form-control" value="<?php echo $_SESSION["usu_name"] ?> <?php echo $_SESSION["usu_apell"] ?>" disabled="">
 						        </fieldset>
 					        </div>
 
                             <div class="col-md-4 col-sm-4">
 						        <fieldset class="form-group">
 							        <label class="form-label" for="tick_fecha">Fecha</label>
-							        <input type="date" readonly="" class="form-control" id="tick_fecha" >
+							        <input type="date" readonly="" class="form-control" id="tick_fecha" name="tick_fecha" >
 						        </fieldset>
 					        </div>
 
@@ -72,7 +72,7 @@
 						<div class="col-lg-6">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="tipo_id">Tipo</label>
-								<select id="tipo_id" class="select2 select2-hidden-accessible" name="tipo_name" multiple="" tabindex="-1" aria-hidden="true">
+								<select id="tipo_id" class="select2 select2-hidden-accessible" name="tipo_id" multiple="" tabindex="-1" aria-hidden="true">
 								</select>
 							</fieldset>
 						</div>
@@ -80,7 +80,7 @@
                         <div class="col-lg-6">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="proceso_id">Proceso</label>
-								<select id="proceso_id" class="select2 select2-hidden-accessible" name="proces_name" multiple="" tabindex="-1" aria-hidden="true">
+								<select id="proceso_id" class="select2 select2-hidden-accessible" name="proceso_id" multiple="" tabindex="-1" aria-hidden="true">
 								</select>
 							</fieldset>
 						</div>
@@ -96,12 +96,12 @@
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="tick_descrip">Descripción</label>
 								<div class="summernote-theme-1">
-									<textarea id="tick_descrip" name="tick_descrip" class="summernote" name="name"></textarea>
+									<textarea id="tick_descrip" name="tick_descrip" class="summernote" name="tick_descrip"></textarea>
 								</div>
 							</fieldset>
 						</div>
                         <div class="col-lg-12">
-                            <a href="../Consultar/index.php" class="btn btn-rounded btn-inline btn-danger">Cancelar</a>
+                            <a href="../Consultar/index.php" id="cancelar" class="btn btn-rounded btn-inline btn-danger">Cancelar</a>
 							<button type="submit" name="action" value="add" class="btn btn-rounded btn-inline btn-success">Guardar</button>
 						</div>
 					</form>
