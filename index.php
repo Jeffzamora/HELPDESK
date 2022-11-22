@@ -33,7 +33,7 @@
                     <div class="sign-avatar">
                         <img src="public/img/avatar-sign.png" alt="">
                     </div>
-                    <header class="sign-title">Acceso</header>
+                    <header class="sign-title" id="lbltitulo">Acceso Usuario</header>
                     <?php
                     if (isset($_GET["m"])){
                             switch($_GET["m"]){
@@ -73,6 +73,9 @@
                     <div class="form-group">
                         <div class="float-right reset">
                             <a href="reset-password.html">Cambiar Contraseña</a>
+                        </div>
+                        <div class="float-left reset">
+                            <a href="#" id="btntecnico">Acceso Tecnico</a>
                         </div>
                     </div>
                     <input type="hidden" name="enviar" class="form-control" value="si">

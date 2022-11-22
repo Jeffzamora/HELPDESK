@@ -8,5 +8,27 @@
         case "insert":
             $ticket->insert_ticket($_POST["usu_id"],$_POST["tipo_id"],$_POST["proceso_id"],$_POST["tick_orden"],$_POST["tick_acta"],$_POST["tick_descrip"]);
         break;
+
+        case "listar_x_usu":
+            $datos=$ticket->list_ticket($_POST["usu_id"]);
+            $data= Array();
+            foreach($datos as $row){
+                $sub_array = array();
+                $sub_array[] = $row["tick_id"];
+                $sub_array[] = $row["tipo_name"];
+                $sub_array[] = $row["proces_name"];
+                $sub_array[] = $row["tick_orden"];
+                $sub_array[] = date('d/m/Y H:i:s',strtotime($row["tick_fecha"]));
+                $sub_array[] = '<button type="button" onClick="ver('.$row["tick_id"].');"  id="'.$row["tick_id"].'" class="btn btn-inline btn-primary btn-sm ladda-button"><i class="fa fa-eye"></i></button>';
+                $data[] = $sub_array;
+            }
+
+            $results = array(
+                "sEcho"=>1,
+                "iTotalRecords"=>count($data),
+                "iTotalDisplayRecords"=>count($data),
+                "aaData"=>$data);
+            echo json_encode($results);
+        break;
     }
 ?>
