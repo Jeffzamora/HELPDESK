@@ -33,7 +33,7 @@
                     <div class="sign-avatar">
                         <img src="public/img/avatar-sign.png" alt="">
                     </div>
-                    <header class="sign-title">Acceso</header>
+                    <header class="sign-title">Acceso</header> <!--haciendo pruebas de commit -->
                     <?php
                     if (isset($_GET["m"])){
                             switch($_GET["m"]){
@@ -105,3 +105,5 @@
 <script src="public/js/app.js"></script>
 </body>
 </html>
+
+
