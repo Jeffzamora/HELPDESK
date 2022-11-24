@@ -37,9 +37,10 @@
 						<tr>
 							<th style="width: 15%;">Nro.Ticket</th>
 							<th style="width: 15%;">Tipo</th>
-							<th class="d-none d-sm-table-cell" style="width: 20%;">Proceso</th>
+							<th class="d-none d-sm-table-cell" style="width: 15%;">Proceso</th>
 							<th class="d-none d-sm-table-cell" style="width: 20%;">Orden</th>
-							<th class="d-none d-sm-table-cell" style="width: 20%;">Fecha de creacion</th>
+							<th class="d-none d-sm-table-cell" style="width: 5%;">Estado</th>
+							<th class="d-none d-sm-table-cell" style="width: 10%;">Fecha de creacion</th>
 							<th class="text-center" style="width: 5%;"></th>
 						</tr>
 					</thead>
