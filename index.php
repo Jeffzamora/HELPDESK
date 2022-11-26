@@ -35,11 +35,8 @@
                     <div class="sign-avatar">
                         <img src="public/img/avatar-sign.png" alt="">
                     </div>
-<<<<<<< HEAD
                     <header class="sign-title" id="lbltitulo">Acceso Admin</header>
-=======
                     <header class="sign-title">Acceso</header> <!--haciendo pruebas de commit -->
->>>>>>> 2915f96b82edf756976ea60e7302bdfbd8892537
                     <?php
                     if (isset($_GET["m"])){
                             switch($_GET["m"]){

@@ -41,7 +41,7 @@ $(document).ready(function(){
             "bDestroy": true,
             "responsive": true,
             "bInfo":true,
-            "iDisplayLength": 10,
+            "iDisplayLength": 25,
             "autoWidth": false,
             "language": {
                 "sProcessing":     "Procesando...",
@@ -63,7 +63,7 @@ $(document).ready(function(){
                     "sPrevious": "Anterior"
                 },
                 "oAria": {
-                    "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+                    "sSortAscending":  ": Desactivar para ordenar la columna de manera ascendente",
                     "sSortDescending": ": Activar para ordenar la columna de manera descendente"
                 }
             }
@@ -94,7 +94,7 @@ $(document).ready(function(){
             "bDestroy": true,
             "responsive": true,
             "bInfo":true,
-            "iDisplayLength": 10,
+            "iDisplayLength": 25,
             "autoWidth": false,
             "language": {
                 "sProcessing":     "Procesando...",
